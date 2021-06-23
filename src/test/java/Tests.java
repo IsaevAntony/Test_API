@@ -1,6 +1,6 @@
 import org.testng.annotations.Test;
 
-public class ApiTests {
+public class Tests {
     @Test
     public void test_1(){
 
