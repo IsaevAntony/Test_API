@@ -1,6 +1,8 @@
+package data.classes;
+
 import java.util.List;
 
-public class Resourse {
+public class Resource {
     private Integer page;
     private Integer per_page;
     private Integer total;
@@ -8,11 +10,11 @@ public class Resourse {
     private List<Data> data;
     private Support support;
 
-    public Resourse(){
+    public Resource(){
         super();
     }
 
-    public Resourse(Integer page, Integer per_page, Integer total, Integer total_pages, List<Data> data, Support support) {
+    public Resource(Integer page, Integer per_page, Integer total, Integer total_pages, List<Data> data, Support support) {
         this.page = page;
         this.per_page = per_page;
         this.total = total;
@@ -68,4 +70,6 @@ public class Resourse {
     public void setSupport(Support support) {
         this.support = support;
     }
+
+
 }

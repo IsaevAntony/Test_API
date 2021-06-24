@@ -1,3 +1,5 @@
+package data.classes;
+
 public class PeopleCreated extends People{
 
     private Integer id;

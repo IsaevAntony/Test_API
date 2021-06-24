@@ -1,3 +1,5 @@
+package data.classes;
+
 public class Data {
     private Integer id;
     private String email;

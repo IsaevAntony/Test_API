@@ -1,19 +1,18 @@
-import org.testng.Assert;
+import data.classes.People;
+import data.classes.PeopleCreated;
+import data.classes.Resource;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
-import static org.hamcrest.Matchers.*;
+import static steps.Steps.checkNotNull;
+import static steps.Steps.getUserDataFromPage;
 
 public class Tests {
     @Test
     public void test_1() {
-        Resourse resourse = given()
-                .when()
-                .get("https://reqres.in/api/users?page=2")
-                .then()
-                .log().body()
-                .extract().body().as(Resourse.class);
-        resourse.getData().forEach(x -> System.out.println(x.getEmail()));
+        Resource resource = getUserDataFromPage();
+        checkNotNull(resource);
+
     }
 
     @Test()

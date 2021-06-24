@@ -1,3 +1,5 @@
+package data.classes;
+
 public class People {
 
     private String name;
