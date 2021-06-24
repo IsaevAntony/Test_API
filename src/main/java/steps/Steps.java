@@ -26,6 +26,7 @@ public class Steps {
         Assert.assertNotNull(resource.getSupport().getUrl(), "Поле URL пустое");
         Assert.assertNotNull(resource.getSupport().getText(), "Поле text пустое");
     }
+
     @Step("Получаем данные со страницы")
     public static Resource getUserDataFromPage(){
         Resource resource = given()
